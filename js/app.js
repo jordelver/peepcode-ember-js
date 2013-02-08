@@ -13,8 +13,16 @@ App.TablesRoute = Ember.Route.extend({
   }
 });
 
+App.TableRoute = Ember.Route.extend({
+  model: function(params) {
+    return App.Table.find(params.table_id);
+  }
+});
+
 // Controllers
 App.TablesController = Ember.ArrayController.extend();
+
+App.TableController = Ember.ObjectController.extend();
 
 // Models
 App.Store = DS.Store.extend({
