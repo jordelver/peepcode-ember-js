@@ -32,6 +32,8 @@ App.TableController = Ember.ObjectController.extend();
 
 App.FoodController = Ember.ArrayController.extend();
 
+App.TabController = Ember.ObjectController.extend();
+
 // Models
 App.Store = DS.Store.extend({
   revision: 11,
